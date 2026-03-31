@@ -1,0 +1,132 @@
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+
+.contact-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+
+.categorie {
+  display: inline-block;
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.info-blok {
+  margin-bottom: 20px;
+}
+
+.info-blok h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.info-blok p {
+  color: #e2e8f0;
+  margin: 2px 0;
+}
+
+.info-blok .sub {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+
+.contact-link {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #7dd3fc;
+}
+
+
+.sociaal-groep {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sociaal-link {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.sociaal-link:hover {
+  background-color: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+
+.openingsuren-box h2 {
+  margin-bottom: 16px;
+}
+
+.uren-lijst {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.uur-rij {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #e2e8f0;
+}
+
+.uur-rij.gesloten {
+  opacity: 0.4;
+}
+
+.uur-rij .dag {
+  font-weight: bold;
+  color: #cbd5e1;
+}
+
+.uur-rij .uur {
+  color: #38bdf8;
+}
+
+.uur-rij.gesloten .uur {
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 16px;
+  }
+}
